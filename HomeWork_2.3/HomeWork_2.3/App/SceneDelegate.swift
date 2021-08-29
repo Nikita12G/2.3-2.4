@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  HomeWork 2.3
+//  HomeWork_2.3
 //
-//  Created by Никита Гуляев on 24.08.2021.
+//  Created by Никита Гуляев on 25.08.2021.
 //
 
 import UIKit
