@@ -13,17 +13,25 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userPasswordTextView: UITextField!
     
 //    MARK: - Private properties
-    private let user = "User"
-    private let password = "Password"
+    private let user = PersonalInformation.myPersonalInformation().login
+    private let password = PersonalInformation.myPersonalInformation().password
     
 //    MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.user = user
+        
+        var tabBarController: UITabBarController = segue.destination as! UITabBarController {
+            title = PersonalInformation.myPersonalInformation().personal.name + " " + PersonalInformation.myPersonalInformation().personal.surname
+        }
+        
+//        for viewController in viewControllers {
+//                    if let welcomeVC = viewController as? WelcomeViewController {
+//        }
+//        }
     }
     
 //    MARK - IBAction
-    
     @IBAction func logInView() {
         if userTextView.text != user || userPasswordTextView.text != password {
             showAlert(
