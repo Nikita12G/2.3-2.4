@@ -11,7 +11,7 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
     
-    var user = ""
+    var user = PersonalInformation.myPersonalInformation().personal.name + PersonalInformation.myPersonalInformation().personal.surname
     
     override func viewDidLoad() {
         super.viewDidLoad()

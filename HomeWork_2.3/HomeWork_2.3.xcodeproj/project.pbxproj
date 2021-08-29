@@ -13,6 +13,7 @@
 		A1489CA226D6ACBB001D5035 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1489CA126D6ACBB001D5035 /* SceneDelegate.swift */; };
 		A1489CA726D6ACBB001D5035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1489CA526D6ACBB001D5035 /* Main.storyboard */; };
 		A1489CA926D6ACBC001D5035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1489CA826D6ACBC001D5035 /* Assets.xcassets */; };
+		A14E763426DB470B00EC5A47 /* PersonalInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E763326DB470B00EC5A47 /* PersonalInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A1489CA626D6ACBB001D5035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1489CA826D6ACBC001D5035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1489CAD26D6ACBC001D5035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14E763326DB470B00EC5A47 /* PersonalInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +93,21 @@
 		A1489C9E26D6ACBB001D5035 /* HomeWork_2.3 */ = {
 			isa = PBXGroup;
 			children = (
+				A125EB3626DA67B700EAA481 /* ViewController */,
+				A14E763226DB46EA00EC5A47 /* Models */,
+				A125EB3526DA675D00EAA481 /* Storyboaard */,
 				A125EB3426DA672200EAA481 /* App */,
 				A125EB3726DA67D600EAA481 /* Resorces */,
-				A125EB3526DA675D00EAA481 /* Storyboaard */,
-				A125EB3626DA67B700EAA481 /* ViewController */,
 			);
 			path = HomeWork_2.3;
+			sourceTree = "<group>";
+		};
+		A14E763226DB46EA00EC5A47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A14E763326DB470B00EC5A47 /* PersonalInformation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				A1257E8626D6BDC300C385DF /* WelcomeViewController.swift in Sources */,
 				A1489CA026D6ACBB001D5035 /* AppDelegate.swift in Sources */,
 				A1489CA226D6ACBB001D5035 /* SceneDelegate.swift in Sources */,
+				A14E763426DB470B00EC5A47 /* PersonalInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
