@@ -21,16 +21,15 @@ class LoginViewController: UIViewController {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.user = user
         
-        var tabBarController: UITabBarController = segue.destination as! UITabBarController {
-            title = PersonalInformation.myPersonalInformation().personal.name + " " + PersonalInformation.myPersonalInformation().personal.surname
-        }
+        let tabBarController = segue.destination as! UITabBarController
+//        guard let viewControllers = tabBarController.viewControllers as? UITabBarController else {return}
         
-//        for viewController in viewControllers {
-//                    if let welcomeVC = viewController as? WelcomeViewController {
-//        }
-//        }
-    }
-    
+        for viewController in viewControllers {
+                    if let welcomeVC = viewController as? WelcomeViewController {
+//        title = PersonalInformation.myPersonalInformation().personal.name + PersonalInformation.myPersonalInformation().personal.surname
+        }
+        }
+        }
 //    MARK - IBAction
     @IBAction func logInView() {
         if userTextView.text != user || userPasswordTextView.text != password {

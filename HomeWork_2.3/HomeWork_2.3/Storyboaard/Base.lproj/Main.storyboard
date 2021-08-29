@@ -232,8 +232,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t2s-vx-3Y1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Hobby" image="sportscourt" catalog="system" id="vLY-n1-Swn"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QUc-UD-aEW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="QUc-UD-aEW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
